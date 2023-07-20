@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+
+}
+
+.container {
+    width: 730px;
+    
+    margin: 30px auto;
+}
+
+.nav {
+    width: 730px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+
+.nav img {
+    margin-left: 10px;
+}
+
+.search {
+    background-color: rgba(254, 254, 254, 1);
+    padding: 20px;
+    width: 730px;
+    max-height: 69px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow : 0 4px 7px #928a8a;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.search img {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.search button {
+    padding:  5px 10px;
+    background-color: #122d8d;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.card {
+    width: 730px;
+    height: 419px;
+    padding: 40px;
+    background-color: rgba(254, 254, 254, 1);
+    border-radius: 10px;
+}
+
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bio {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.bio img {
+    border-radius: 50%;
+    width: 118px;
+}
+
+.bio h3,
+.bio h4 {
+    padding: 8px 0;    
+}
+
+.address {
+    margin-left: 160px;
+}
+
+.card-followOn {
+    background-color: rgba(246, 248, 255, 1);
+}
+
+.follow{
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    margin-left: 12px;
+}
+
+.error{
+    display: inline;
+    color: red;
+}
+.no-error {
+    color: rgb(214, 161, 13);
+    display: none;
+}
+
+
+  
+
+/*************** DARK MODE STYLING *************/
+
+.light {
+    background-color: #c4c7ce;
+}
+  
+.dark  {
+    background-color: #04112c;
+}
+
+.navOff {
+    width: 730px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    margin-bottom: 10px; 
+    color: #F6F8FF;
+    background-color: #161027;
+}
+
+.cardOff {
+    width: 730px;
+    height: 419px;
+    padding: 40px;
+    background-color: rgba(30, 42, 71, 1);
+    color: #F6F8FF;
+    border-radius: 10px;
+}
+
+.searchOff{
+    background-color: rgba(30, 42, 71, 1);
+}
+
+.card-followOff {
+    background-color: rgba(20, 29, 47, 1);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+    
