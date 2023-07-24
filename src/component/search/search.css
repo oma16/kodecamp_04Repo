@@ -1,0 +1,243 @@
+ .mode1{
+  color: #697C9A;
+  text-align: right;
+  font-family: Space Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.5px;
+}
+ .mode {
+  color: #fff;
+  text-align: right;
+  font-family: Space Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.5px;
+}
+ .mode1:hover {
+  cursor: pointer;
+  color: #222731;
+}
+ .mode:hover {
+  cursor: pointer;
+  color: #90A4D4;
+}
+ .devfinder {
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.devfinder1{
+  color:#222731;
+  font-family: Space Mono;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.nav .modetype {
+  display: flex;
+  margin-top: 10px;
+}
+.nav {
+  width: 730px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+.navOff {
+    width: 730px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    margin-bottom: 10px;
+    color: #f6f8ff;
+  }
+  .light {
+    background-color: #c4c7ce;
+  }
+  
+  .dark {
+    background-color: #04112c;
+  }
+  
+.nav .sun,
+.nav .moon {
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.search {
+  background-color: rgba(254, 254, 254, 1);
+  width: 730px;
+  max-height: 69px;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.searchText1 {
+  width: 300px;
+  height: 45px;
+  border: none;
+  background: none;
+}
+.searchText {
+  width: 300px;
+  height: 45px;
+  border: none;
+  background: none;
+}
+.searchText:focus {
+  color: #222731;
+  font-family: Space Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  outline: none;
+}
+.searchText1:focus {
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  outline: none;
+}
+.searchOff {
+    background-color: rgba(30, 42, 71, 1);
+  }
+.searchOn {
+  background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+  }
+  
+.searchText::placeholder {
+  color: #4b6a9b;
+  font-family: Space Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+  margin-right: 30px;
+}
+.searchText1::placeholder {
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+
+.search img {
+  padding-right: 10px;
+  vertical-align: middle;
+  margin-left: 25px;
+}
+.search:hover {
+  cursor: pointer;
+}
+
+.search button {
+  border-radius: 10px;
+  background: #0079ff;
+  color: #fff;
+  width: 106px;
+  height: 50px;
+  flex-shrink: 0;
+  border: 2px solid #0079ff;
+  margin-right: 10px;
+}
+.search button:hover {
+  cursor: pointer;
+  background: #60abff;
+  border: 2px solid #60abff;
+}
+.navOff {
+  width: 730px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  margin-bottom: 10px; 
+  color: #F6F8FF;
+}
+.error{
+  color: #F74646;
+font-family: Space Mono;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-left: 145px;
+}
+.no-error {
+  color: rgb(214, 161, 13);
+  display: none;
+}
+
+
+
+@media only screen and (max-width:780px) {
+    .search{
+        width: 573px;
+    }
+    
+    
+    .nav{
+        width: 573px;
+    }
+    
+
+
+    
+    
+}
+
+@media only screen and (max-width:430px) {
+   
+    .search{
+        width: 327px;
+    }
+
+    .nav{
+        width: 327px;
+    }
+    
+    .searchText::placeholder, .searchText1::placeholder{
+       font-size: 13px;
+    }
+    
+    .searchText,.searchText1{
+        width: 195px;
+margin-left: -5px;
+    }
+    .search img{
+        margin-left: 1px;
+    }
+    .searchArea{
+        margin-left: 5px;
+    }
+    .search button {
+        width: 84px;
+        height: 46px;
+        margin-right: 4px;
+    }
+    
+   
+}

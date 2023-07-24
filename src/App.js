@@ -1,14 +1,11 @@
-import Github_user_search from './component/Github_user_search';
-
+import GithubUserSearch from "./component/githubUserSearch/GithubUserSearch";
 
 function App() {
-
   return (
-    <div >
-      <Github_user_search />
+    <div className="app">
+      <GithubUserSearch />
     </div>
-  )
-
+  );
 }
 
 export default App;
