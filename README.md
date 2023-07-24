@@ -33,8 +33,17 @@ Users should be able to:
 
 ### Screenshot
 
+## Desktop
 ![](../assets/light.png)
 ![](../assets/dark.png)
+
+## Tablet
+![](../assets/tabletdark.png)
+![](../assets/tabletlight.png)
+
+## Mobile
+![](../assets/mobilelight.png)
+![](../assets/mobiledark.png)
 
 
 
@@ -55,9 +64,13 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 
 
-## Author
+## Authors
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Mariam ](https://www.your-site.com)
+- Frontend Mentor - [@oma16](https://www.frontendmentor.io/profile/oma16)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+
+- Website - [Uthman ](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
