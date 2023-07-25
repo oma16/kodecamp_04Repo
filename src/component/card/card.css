@@ -278,4 +278,14 @@
   .joinedDate1 .dates {
     font-size: 13px;
   }
+  .bio img {
+    border-radius: 70%;
+    width: 70px;
+}
+.login {
+  margin-bottom: 6px;
+}
+.userDetails1 h3{
+  margin-top: 0px;
+}
 }
