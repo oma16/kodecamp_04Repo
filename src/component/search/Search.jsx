@@ -1,10 +1,8 @@
 import React from "react";
 import "./search.css";
 import moon from "../../assets/icon-moon.svg";
-import moonm from "../../assets/icon-moon-m.svg";
 import search from "../../assets/icon-search.svg";
 import sun from "../../assets/icon-sun.svg";
-import sunm from "../../assets/icon-sun-m.svg";
 
 const Search = ({ modeChg, fucMoon, error, handlesearch, getData }) => {
   return (
