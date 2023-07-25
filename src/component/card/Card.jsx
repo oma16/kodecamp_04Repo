@@ -4,6 +4,26 @@ import "./card.css";
 import Social from "../social/Social";
 
 const Card = ({ modeChg, obj }) => {
+const months=[
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec'
+]
+
+  const date = new Date(obj.created_at) 
+   const year=date.getFullYear()
+   const day= date.getDate()
+   const month= date.getMonth()
+   const monthName = months[month]
   return (
     <div className={modeChg ? "card cardOff" : "card cardOn"}>
       <div className="card-header">
@@ -20,7 +40,7 @@ const Card = ({ modeChg, obj }) => {
               </div>
 
               <div className={modeChg ? "joinedDate" : "joinedDate1"}>
-                <span className="dates">Joined 25 jan 2011</span>
+                <span className="dates">Joined {day} {monthName} {year}</span>
               </div>
             </div>
             <div>
