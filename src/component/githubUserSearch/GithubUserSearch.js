@@ -66,7 +66,7 @@ const GithubUserSearch = () => {
           fucMoon={fucMoon}
           modeChg={modeChg}
         />
-       <Card  modeChg={modeChg} obj={obj}/>
+        <Card modeChg={modeChg} obj={obj} />
       </div>
     </>
   );

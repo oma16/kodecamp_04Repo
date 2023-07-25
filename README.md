@@ -34,16 +34,16 @@ Users should be able to:
 ### Screenshot
 
 ## Desktop
-![](../assets/light.png)
-![](../assets/dark.png)
+![](./src/assets/light.png)
+![](./src/assets/dark.png)
 
 ## Tablet
-![](../assets/tabletdark.png)
-![](../assets/tabletlight.png)
+![](./src/assets/tabletdark.png)
+![](./src/assets/tabletlight.png)
 
 ## Mobile
-![](../assets/mobilelight.png)
-![](../assets/mobiledark.png)
+![](./src/assets/mobilelight.png)
+![](./src/assets/mobiledark.png)
 
 
 

@@ -1,54 +1,53 @@
-.card-social{
-    width: 429px;
-    height: 63px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 47px;
-    margin-top: 30px;
+.card-social {
+  width: 429px;
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 47px;
+  margin-top: 30px;
 }
-.location{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 15px;
-    color: #FFF;
-font-family: Space Mono;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.location {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.location1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  color: #4b6a9b;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.location:hover,
+.location1:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.user {
+  margin-left: 20px;
+  text-decoration: none;
+}
 
+@media only screen and (max-width: 780px) {
+  .card-social {
+    margin-left: -8px;
+  }
 }
-.location1{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 15px;
-    color: #4B6A9B;
-font-family: Space Mono;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.location:hover,.location1:hover{
-    text-decoration-line: underline;
-    cursor: pointer;
-}
-.user{
-    margin-left: 20px;
-    text-decoration: none;
-}
-
-
-@media only screen and (max-width:780px){
-    .card-social{
-        margin-left: -8px;
-    }
-}
-@media only screen and (max-width:430px){
-    .card-social{
-        flex-direction: column;
-        width: 185px;
-height: 127px;
-margin-left: -90px;
-    }
+@media only screen and (max-width: 430px) {
+  .card-social {
+    flex-direction: column;
+    width: 185px;
+    height: 127px;
+    margin-left: -90px;
+  }
 }

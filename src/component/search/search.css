@@ -1,5 +1,5 @@
- .mode1{
-  color: #697C9A;
+.mode1 {
+  color: #697c9a;
   text-align: right;
   font-family: Space Mono;
   font-size: 13px;
@@ -8,7 +8,7 @@
   line-height: normal;
   letter-spacing: 2.5px;
 }
- .mode {
+.mode {
   color: #fff;
   text-align: right;
   font-family: Space Mono;
@@ -18,15 +18,15 @@
   line-height: normal;
   letter-spacing: 2.5px;
 }
- .mode1:hover {
+.mode1:hover {
   cursor: pointer;
   color: #222731;
 }
- .mode:hover {
+.mode:hover {
   cursor: pointer;
-  color: #90A4D4;
+  color: #90a4d4;
 }
- .devfinder {
+.devfinder {
   color: #fff;
   font-family: Space Mono;
   font-size: 26px;
@@ -34,8 +34,8 @@
   font-weight: 700;
   line-height: normal;
 }
-.devfinder1{
-  color:#222731;
+.devfinder1 {
+  color: #222731;
   font-family: Space Mono;
   font-size: 26px;
   font-style: normal;
@@ -55,27 +55,47 @@
   margin-bottom: 10px;
 }
 .navOff {
-    width: 730px;
-    height: 38px;
-    display: flex;
-    justify-content: space-between;
-    padding: 2px;
-    margin-bottom: 10px;
-    color: #f6f8ff;
-  }
-  .light {
-    background-color: #c4c7ce;
-  }
-  
-  .dark {
-    background-color: #04112c;
-  }
-  
+  width: 730px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  margin-bottom: 10px;
+  color: #f6f8ff;
+}
+.light {
+  background-color: #c4c7ce;
+}
+
+.dark {
+  background-color: #04112c;
+}
+
 .nav .sun,
 .nav .moon {
+  display: flex;
   margin-left: 5px;
   width: 20px;
   height: 20px;
+}
+
+.sun:hover {
+  background-image: url(../../assets/icon-sun-m.svg);
+  background-repeat: no-repeat;
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.moon:hover {
+  background-image: url(../../assets/icon-moon-m.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .search {
@@ -119,13 +139,13 @@
   outline: none;
 }
 .searchOff {
-    background-color: rgba(30, 42, 71, 1);
-  }
+  background-color: rgba(30, 42, 71, 1);
+}
 .searchOn {
-  background: #FEFEFE;
-    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
-  }
-  
+  background: #fefefe;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+
 .searchText::placeholder {
   color: #4b6a9b;
   font-family: Space Mono;
@@ -174,70 +194,61 @@
   display: flex;
   justify-content: space-between;
   padding: 2px;
-  margin-bottom: 10px; 
-  color: #F6F8FF;
+  margin-bottom: 10px;
+  color: #f6f8ff;
 }
-.error{
-  color: #F74646;
-font-family: Space Mono;
-font-size: 15px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-margin-left: 145px;
+.error {
+  color: #f74646;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 145px;
 }
 .no-error {
   color: rgb(214, 161, 13);
   display: none;
 }
 
+@media only screen and (max-width: 780px) {
+  .search {
+    width: 573px;
+  }
 
-
-@media only screen and (max-width:780px) {
-    .search{
-        width: 573px;
-    }
-    
-    
-    .nav{
-        width: 573px;
-    }
-    
-
-
-    
-    
+  .nav {
+    width: 573px;
+  }
 }
 
-@media only screen and (max-width:430px) {
-   
-    .search{
-        width: 327px;
-    }
+@media only screen and (max-width: 430px) {
+  .search {
+    width: 327px;
+  }
 
-    .nav{
-        width: 327px;
-    }
-    
-    .searchText::placeholder, .searchText1::placeholder{
-       font-size: 13px;
-    }
-    
-    .searchText,.searchText1{
-        width: 195px;
-margin-left: -5px;
-    }
-    .search img{
-        margin-left: 1px;
-    }
-    .searchArea{
-        margin-left: 5px;
-    }
-    .search button {
-        width: 84px;
-        height: 46px;
-        margin-right: 4px;
-    }
-    
-   
+  .nav {
+    width: 327px;
+  }
+
+  .searchText::placeholder,
+  .searchText1::placeholder {
+    font-size: 13px;
+  }
+
+  .searchText,
+  .searchText1 {
+    width: 195px;
+    margin-left: -9px;
+  }
+  .search img {
+    margin-left: 1px;
+  }
+  .searchArea {
+    margin-left: 5px;
+  }
+  .search button {
+    width: 84px;
+    height: 46px;
+    margin-right: 4px;
+  }
 }

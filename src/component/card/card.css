@@ -1,273 +1,273 @@
 .card {
-    width: 730px;
-    height: 419px;
-    background-color: rgba(254, 254, 254, 1);
-    border-radius: 10px;
+  width: 730px;
+  height: 419px;
+  background-color: rgba(254, 254, 254, 1);
+  border-radius: 10px;
 }
 
-
 .card-header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
 }
 
 .bio {
-    display: flex;
-    justify-content: flex-start;
-    width: 500px;
-    margin-left: 40px;
+  display: flex;
+  justify-content: flex-start;
+  width: 500px;
+  margin-left: 40px;
 }
-.userDetails{
-    margin-left: 50px;
+.userDetails {
+  margin-left: 50px;
 }
-.userDetails1{
-    margin-left: 50px;
+.userDetails1 {
+  margin-left: 50px;
 }
-.joinedDate .dates{
-    color: #FFF;
-text-align: right;
-font-family: Space Mono;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.joinedDate .dates {
+  color: #fff;
+  text-align: right;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.joinedDate1 .dates{
-color: #697C9A;
-text-align: right;
-font-family: Space Mono;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.joinedDate1 .dates {
+  color: #697c9a;
+  text-align: right;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.userDetails h2{
-    color: #2B3442;
-    font-family: Space Mono;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.userDetails h2 {
+  color: #2b3442;
+  font-family: Space Mono;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.userDetails1 h2{
-    color: #FFF;
-    font-family: Space Mono;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.userDetails1 h2 {
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.userDetails1 h3{
-    color: #0079FF;
-font-family: Space Mono;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-top: 5px;
+.userDetails1 h3 {
+  color: #0079ff;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 5px;
 }
-.userDetails h4{
-    width: 480px;
-    color: #4B6A9B;
-font-family: Space Mono;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 25px; 
- margin-top: 30px;   
+.userDetails h4 {
+  width: 480px;
+  color: #4b6a9b;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 30px;
 }
-.userDetails1 h4{
-    width: 480px;
-    color: #FFF;
-font-family: Space Mono;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 25px; 
-margin-top: 30px; 
+.userDetails1 h4 {
+  width: 480px;
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 30px;
 }
 
 .bio img {
-    border-radius: 50%;
-    width: 118px;
+  border-radius: 50%;
+  width: 118px;
 }
 .card-followOn {
-   
-width: 480px;
-height: 85px;
-flex-shrink: 0;
-border-radius: 10px;
-background: #F6F8FF;
-margin-left: 48px;
-    margin-top: 20px;
+  width: 480px;
+  height: 85px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f6f8ff;
+  margin-left: 48px;
+  margin-top: 20px;
 }
 
-.address{
-    display: flex;
-    flex-direction: column;
-    margin-left: 160px;
-
+.address {
+  display: flex;
+  flex-direction: column;
+  margin-left: 160px;
 }
-.card-follow{
-    display: flex;
-    justify-content: space-around;
+.card-follow {
+  display: flex;
+  justify-content: space-around;
 }
 .cardOff {
-    width: 730px;
-    height: 419px;
-    background-color: rgba(30, 42, 71, 1);
-    color: #F6F8FF;
-    border-radius: 10px;
+  width: 730px;
+  height: 419px;
+  background-color: rgba(30, 42, 71, 1);
+  color: #f6f8ff;
+  border-radius: 10px;
 }
-.details{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .card-followOff {
-    background-color: rgba(20, 29, 47, 1);
-    width: 480px;
-height: 85px;
-flex-shrink: 0;
-border-radius: 10px;
-margin-left: 48px;
+  background-color: rgba(20, 29, 47, 1);
+  width: 480px;
+  height: 85px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  margin-left: 48px;
+  margin-top: 20px;
+}
+
+.follower {
+  color: #4b6a9b;
+  font-family: Space Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.follower1 {
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bio2 h4 {
+  display: none;
+}
+.bio3 h4 {
+  display: none;
+}
+.follow {
+  margin-top: 25px;
+}
+.repoVal1 {
+  color: #2b3442;
+  font-family: Space Mono;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.repoVal {
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 780px) {
+  .card {
+    width: 573px;
+  }
+  .card-followOff {
+    width: 493px;
+    display: flex;
+  }
+  .login {
+    margin-bottom: 30px;
+  }
+  .card-followOn {
+    width: 493px;
+  }
+  .address {
+    align-items: center;
+    margin-right: 210px;
+  }
+  .details {
+    flex-direction: column;
+  }
+  .joinedDate .dates {
     margin-top: 20px;
-}
-
-.follower{
-    color: #4B6A9B;
-font-family: Space Mono;
-font-size: 13px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.follower1{
-    color: #FFF;
-font-family: Space Mono;
-font-size: 13px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.bio2 h4{ 
+  }
+  .joinedDate1 .dates {
+    margin-top: 20px;
+  }
+  .userDetails h4 {
     display: none;
-}
-.bio3 h4{ 
+  }
+  .userDetails1 h4 {
     display: none;
+  }
+  .bio3 h4 {
+    display: flex;
+    width: 493px;
+    color: #4b6a9b;
+    font-family: Space Mono;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 1px;
+    margin-left: 40px;
+  }
+  .bio2 h4 {
+    display: flex;
+    width: 493px;
+    color: #fff;
+    font-family: Space Mono;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 1px;
+    margin-left: 40px;
+  }
 }
-.follow{
-    margin-top: 25px;
-}
-.repoVal1{
-    color: #2B3442;
-font-family: Space Mono;
-font-size: 22px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
-}
-.repoVal{
-    color: #FFF;
-font-family: Space Mono;
-font-size: 22px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
-}
+@media only screen and (max-width: 430px) {
+  .card {
+    width: 327px;
+    height: 517px;
+  }
+  .card-followOff,
+  .card-followOn {
+    width: 279px;
+    height: 85px;
+    margin-left: 0px;
+  }
 
+  .bio {
+    margin-left: 20px;
+  }
 
-@media only screen and (max-width:780px){
-    .card{
-        width: 573px;
-    }
-    .card-followOff{
-        width: 493px;
-        display: flex;
-    }
-    .login{
-        margin-bottom: 30px;
-    }
-    .card-followOn{
-        width: 493px;
-    }
-    .address{
-        align-items: center;
-        margin-right: 210px;
-    }
-    .details{
-        flex-direction: column;
-    }
-    .joinedDate .dates{
-        margin-top: 20px;
-    }
-    .joinedDate1 .dates{
-        margin-top: 20px;
-    }
-    .userDetails h4{
-        display: none;
-    }
-    .userDetails1 h4{
-        display: none;
-    }
-    .bio3 h4{
-        display: flex;
-        width: 493px;
-color: #4B6A9B;
-font-family: Space Mono;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 25px; 
-margin-top: 1px;
-margin-left: 40px;
-    }
-    .bio2 h4{
-        display: flex;
-        width: 493px;
-color: #FFF;
-font-family: Space Mono;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 25px; 
-margin-top: 1px;
-margin-left: 40px; 
-    }
-}
-@media only screen and (max-width:430px){
-    .card{
-        width: 327px;
-height: 517px;
-    }
-    .card-followOff,.card-followOn{
-        width: 279px;
-height: 85px;
-margin-left: 0px;
-    }
-
-    .bio{
-        margin-left: 20px
-    }
-     
-    .userDetails,.userDetails1 {
-        margin-left: 20px;
-    }
-    .bio2 h4,.bio3 h4{
-        margin-left: 20px;
-        width: 279px;
-        margin-top: 10px;
-
-    }
-    .userDetails1 h2, .userDetails h2{
-        font-size: 16px;
-    }
-    .joinedDate .dates,.joinedDate1 .dates{
-        font-size: 13px;
-    }
+  .userDetails,
+  .userDetails1 {
+    margin-left: 20px;
+  }
+  .bio2 h4,
+  .bio3 h4 {
+    margin-left: 20px;
+    width: 279px;
+    margin-top: 10px;
+  }
+  .userDetails1 h2,
+  .userDetails h2 {
+    font-size: 16px;
+  }
+  .joinedDate .dates,
+  .joinedDate1 .dates {
+    font-size: 13px;
+  }
 }
