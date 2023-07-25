@@ -210,6 +210,9 @@
   .joinedDate1 .dates {
     margin-top: 20px;
   }
+  .joinedDate, .joinedDate1{
+    margin-top: -5px;
+  }
   .userDetails h4 {
     display: none;
   }
