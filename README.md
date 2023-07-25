@@ -49,8 +49,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/uthmanHub/github-user-search)
-- Live Site URL: [Add live site URL here](https://github-user-search-zeta-one.vercel.app/)
+- Solution URL: [https://github.com/uthmanHub/github-user-search](https://github.com/uthmanHub/github-user-search)
+- Live Site URL: [https://github-user-search-zeta-one.vercel.app/](https://github-user-search-zeta-one.vercel.app/)
 
 ## My process
 
