@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./GithubUserSearch.css";
 import axios from "axios";
 import Search from "../search/Search";
@@ -8,6 +8,9 @@ const GithubUserSearch = () => {
   const [searchInput, setSearchInput] = useState("octocat");
   const [modeChg, setModechg] = useState(true);
   const [error, setError] = useState(false);
+
+  
+  
 
   //default values to display
   const [obj, setObj] = useState({
@@ -49,12 +52,25 @@ const GithubUserSearch = () => {
   };
 
   const fucMoon = () => {
-    setModechg(!modeChg);
-  };
-
-  modeChg
-    ? (document.body.className = "dark")
-    : (document.body.className = "light");
+   const newMode = modeChg
+    ? false
+    : true;
+    setModechg(newMode)
+    localStorage.setItem("mode",newMode)
+    
+    };
+    
+  useEffect(() => {
+   const  value =  JSON.parse(localStorage.getItem("mode"))
+    setModechg(value)
+   
+     
+   }, []);
+   
+   modeChg
+   ? (document.body.className = "dark")
+   : (document.body.className = "light");
+ 
 
   return (
     <>
