@@ -22,3 +22,18 @@ pushed the image
 ![dockerpush](./src/assets/hub-docker.png)
 
 created directory k8s and added [deployment.yaml](k8s/deployment.yaml) and [service.yaml](k8s/service.yaml) files
+
+pushed the application code to github
+
+![pushedapp](./src/assets/pushedapp.png)
+
+![pushedapp](./src/assets/repo.png)
+
+
+## Setting Up GitHub Actions
+
+### Created a GitHub Actions Workflow
+
+Created a .github/workflows directory and a YAML file (deploy.yml) inside this directory with the required configurations
+
+![githubaction](./src/assets/githubaction.png)
