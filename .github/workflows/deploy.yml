@@ -42,5 +42,7 @@ jobs:
         username: ubuntu
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
+          ssh -o StrictHostKeyChecking=no user@your-server-ip << 'EOF'
           kubectl apply -f k8s/deployment.yaml
           kubectl apply -f k8s/service.yaml
+          EOF
