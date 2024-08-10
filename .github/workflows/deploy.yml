@@ -27,22 +27,27 @@ jobs:
         docker build -t oma16/githubusersearch-app:v1 .
         docker push oma16/githubusersearch-app:v1
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: SSH to EC2 and deploy to Minikube
-      uses: appleboy/ssh-action@v0.1.0
+  
+    - name: Set up SSH
+      uses: actions/ssh-agent@v2
       with:
-        host: ${{ secrets.EC2_PUBLIC_IP }}
-        username: ubuntu
         key: ${{ secrets.EC2_SSH_KEY }}
-        script: |
-          ssh -o StrictHostKeyChecking=no user@your-server-ip << 'EOF'
-          kubectl apply -f k8s/deployment.yaml
-          kubectl apply -f k8s/service.yaml
-          EOF
+
+    - name: Connect to EC2 instance
+      run: ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ec2-user@${{ secrets.EC2_PUBLIC_IP }}
+
+    - name: Configure kubectl
+      run: |
+        export MINIKUBE_IP=$(minikube ip)
+        eval $(minikube docker-env)
+        kubectl config set-cluster minikube --server=https://${MINIKUBE_IP}:8443 --certificate-authority=/var/lib/minikube/ca.crt
+        kubectl config set-credentials minikube --client-certificate=/var/lib/minikube/client.crt --client-key=/var/lib/minikube/client.key
+        kubectl config set-context minikube --cluster=minikube --user=minikube
+        kubectl config use-context minikube   
+
+
+    - name: Deploy application
+      run: |
+        kubectl apply -f k8s/deployment.yaml
+        kubectl apply -f k8s/service.yaml
+      
