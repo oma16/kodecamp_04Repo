@@ -34,6 +34,12 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+    - name: Set up SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.EC2_PUBLIC_IP }} >> ~/.ssh/known_hosts
 
     - name: SSH to EC2 and deploy to Minikube
       uses: appleboy/ssh-action@v0.1.0
@@ -52,5 +58,12 @@ jobs:
         script: |
           kubectl apply -f k8s/deployment.yaml
           kubectl apply -f k8s/service.yaml
-   
+    - name: Verify Deployment
+      uses: appleboy/ssh-action@v0.1.0
+      with:
+        host: ${{ secrets.EC2_PUBLIC_IP }}
+        username: ubuntu
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          kubectl get pods
       
