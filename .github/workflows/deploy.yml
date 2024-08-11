@@ -5,7 +5,7 @@ on:
     branches:
       - main
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -21,6 +21,9 @@ jobs:
         run: |
           docker build -t oma16/githubusersearch-app:v1 .
           docker push oma16/githubusersearch-app:v1
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: SSH to EC2 and deploy to Minikube
