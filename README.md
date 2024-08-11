@@ -37,3 +37,65 @@ pushed the application code to github
 Created a .github/workflows directory and a YAML file (deploy.yml) inside this directory with the required configurations
 
 ![githubaction](./src/assets/githubaction.png)
+
+![githubaction](./src/assets/deployfile.png)
+
+![githubaction](./src/assets/githubdockerbuild.png)
+
+
+## Setting Up Terraform for EC2 and Minikube
+
+### Created Terraform Module
+
+VPC modules [terraform/modules/vpc](terraform/modules/vpc)
+
+EC2 modules [terraform/modules/ec2](terraform/modules/ec2)
+
+
+### Initialized and Applied Terraform Configuration
+
+terraform init
+
+![terraforminit](./src/assets/tfinit.png)
+
+terraform plan -out "tfplan.txt"
+
+![terraformplan](./src/assets/tfPlannow.png)
+
+![terraformplan](./src/assets/tfplannow0.png)
+
+
+terraform apply "tfplan.txt"
+
+![terraformapply](./src/assets/tfapplynw.png)
+
+![terraformapply](./src/assets/tfapplynow0.png)
+
+
+## Accessed the Minikube Cluster
+
+### SSH into EC2 Instance
+
+![SSH into EC2](./src/assets/ssh2ec2.png)
+
+### minikube
+
+![minikube](./src/assets/minikube.png)
+
+### Configure kubectl
+
+![kubectl](./src/assets/kubectlconfiged.png)
+
+![kubectl](./src/assets/kubectns.png)
+
+
+## Automate Deployment with GitHub Actions
+
+### Update GitHub Actions Workflow
+
+
+
+
+
+
+
