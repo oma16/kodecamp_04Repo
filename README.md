@@ -93,7 +93,7 @@ terraform apply "tfplan.txt"
 
 ### Update GitHub Actions Workflow
 
-
+![deployment](./src/assets/deploypix.png)
 
 
 

@@ -4,10 +4,11 @@ kind: Service
 metadata:
   name: kodecamp-service
 spec:
+  type: NodePort
   selector:
     app: kodecamp-app
   ports:
     - protocol: TCP
       port: 80
       targetPort: 8000
-  type: LoadBalancer
+      nodePort: 30007
