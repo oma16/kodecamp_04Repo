@@ -43,5 +43,5 @@ jobs:
           host: ${{ secrets.EC2_PUBLIC_IP }}
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
+          run: |
             kubectl get pods
