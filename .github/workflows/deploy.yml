@@ -34,12 +34,19 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: SSH to EC2 and deploy to Minikube
+    - name: SSH to EC2 
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.EC2_PUBLIC_IP }}
+        username: ubuntu
+        key: ${{ secrets.EC2_PRIVATE_KEY }}
+    - name: deploy to Minikube
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.EC2_PUBLIC_IP }}
         username: ubuntu
         key: ${{ secrets.EC2_SSH_KEY }}
+        
         script: |
           kubectl apply -f k8s/deployment.yaml
           kubectl apply -f k8s/service.yaml
