@@ -92,14 +92,15 @@ terraform apply "tfplan.txt"
 
 ![minikubeStatus](./src/assets/minikubestatus.png)
 
+![minikubeStatus](./src/assets/svs.png)
+
 ## Automate Deployment with GitHub Actions
 
 ### Update GitHub Actions Workflow
 
 ![deployment](./src/assets/deploypix.png)
 
-
-
+All SSH keys are securely managed in the secret and variables on github.
 
 
 
