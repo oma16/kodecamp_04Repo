@@ -13,7 +13,7 @@ spec:
         app: kodecamp-app
     spec:
       containers:
-        - name: kodecamp-app
-          image: oma16/githubusersearch-app:v1
-          ports:
-            - containerPort: 8000
+      - name: kodecamp-app
+        image: oma16/githubusersearch-app:v1
+        ports:
+        - containerPort: 8000
