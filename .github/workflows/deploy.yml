@@ -42,8 +42,8 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         
         script: |
-          kubectl apply -f https://github.com/oma16/kodecamp_04Repo/k8s/deployment.yaml
-          kubectl apply -f https://github.com/oma16/kodecamp_04Repo/k8s/service.yaml
+          kubectl apply -f https://github.com/oma16/kodecamp_04Repo/deployment.yaml
+          kubectl apply -f https://github.com/oma16/kodecamp_04Repo/service.yaml
     - name: Verify Deployment
       uses: appleboy/ssh-action@v0.1.0
       with:
