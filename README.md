@@ -21,6 +21,8 @@ pushed the image
 
 ![dockerpush](./src/assets/hub-docker.png)
 
+[dockerhubURL](https://hub.docker.com/r/oma16/githubusersearch-app)
+
 created directory k8s and added [deployment.yaml](k8s/deployment.yaml) and [service.yaml](k8s/service.yaml) files
 
 pushed the application code to github
@@ -88,12 +90,16 @@ terraform apply "tfplan.txt"
 
 ![kubectl](./src/assets/kubectns.png)
 
+![minikubeStatus](./src/assets/minikubestatus.png)
 
 ## Automate Deployment with GitHub Actions
 
 ### Update GitHub Actions Workflow
 
 ![deployment](./src/assets/deploypix.png)
+
+
+
 
 
 
