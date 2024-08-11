@@ -40,14 +40,6 @@ jobs:
         host: ${{ secrets.EC2_PUBLIC_IP }}
         username: ubuntu
         key: ${{ secrets.EC2_SSH_KEY }}
-    - name: Configure kubectl
-      run: |
-        export MINIKUBE_IP=$(minikube ip)
-        eval $(minikube docker-env)
-        kubectl config set-cluster minikube --server=https://${MINIKUBE_IP}:8443 --certificate-authority=/var/lib/minikube/ca.crt
-        kubectl config set-credentials minikube --client-certificate=/var/lib/minikube/client.crt --client-key=/var/lib/minikube/client.key
-        kubectl config set-context minikube --cluster=minikube --user=minikube
-        kubectl config use-context minikube   
         script: |
           kubectl apply -f k8s/deployment.yaml
           kubectl apply -f k8s/service.yaml
