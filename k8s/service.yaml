@@ -6,7 +6,7 @@ spec:
   selector:
     app: kodecamp-app
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 8000
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
   type: LoadBalancer
