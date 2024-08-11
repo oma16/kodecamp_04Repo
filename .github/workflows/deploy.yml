@@ -34,9 +34,9 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: >
-            kubectl apply -f "k8s/deployment.yaml"
+            kubectl apply -f k8s/deployment.yaml
 
-            kubectl apply -f "k8s/service.yaml"
+            kubectl apply -f k8s/service.yaml
       - name: Verify Deployment
         uses: appleboy/ssh-action@v0.1.0
         with:
